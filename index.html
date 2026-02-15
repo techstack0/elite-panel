@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elite Panel</title>
+
+ <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '3412706242218775');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=3412706242218775&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+</head>
+
+<body style="
+margin:0;
+font-family: Arial, sans-serif;
+background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+url('background.jpeg');
+background-size: cover;
+background-position: center;
+color: white;
+">
+
+<!-- MAIN WRAPPER -->
+<div style="
+max-width: 420px;
+margin: auto;
+padding: 30px 15px;
+text-align: center;
+">
+
+<!-- ================= EDIT SECTION START ================= -->
+
+<!-- LOGO -->
+<img src="logo.png"
+style="width:110px; margin-bottom:15px;">
+
+<!-- BRAND NAME -->
+<h1 style="color:#ffffff; letter-spacing:2px; margin:10px 0;">
+Elite Panel
+</h1>
+
+<!-- TAGLINE -->
+<p style="font-size:14px; margin-bottom:10px;">
+Built for accuracy | Backed by consistency
+</p>
+<p style="font-size:14px; margin-bottom:20px;">
+Commission Based Earning
+</p>
+
+<!-- FEATURES -->
+<div style="
+background: rgba(0,0,0,0.4);
+padding: 15px;
+border-radius: 10px;
+text-align: left;
+font-size: 14px;
+margin-bottom: 20px;
+">
+• Guaranteed Earning <br>
+• High commission rate in market
+</div>
+
+
+<!-- PREDICTION HISTORY -->
+<h3 style="color:red; margin-bottom:15px;">
+Commission Details
+</h3>
+
+<div style="
+background: rgba(255,255,255,0.05);
+padding: 15px;
+border-radius: 10px;
+text-align: left;
+font-size: 14px;
+margin-bottom: 20px;
+border: 1px solid #FFD700;
+box-shadow:
+  0 0 6px rgba(255,215,0,0.7),
+  0 0 14px rgba(255,215,0,0.6),
+  0 0 28px rgba(255,215,0,0.5);
+">
+• Pure Gaming-9%<br>
+• Stock Fund-15%<br>
+• Mixing-23%<br>
+• New Political Fund-30%<br>
+</div>
+
+ <!-- 🔴 TIMER HEADING -->
+<h4 style="color:red; margin-bottom:5px;">
+FREE JOINING ENDS IN
+</h4>
+
+<!-- 🔴 TIMER -->
+<div id="timer"
+style="
+font-size:32px;
+font-weight:bold;
+color:red;
+margin-bottom:20px;
+">
+00:30
+</div>
+<a id="joinLink" href="https://t.me/+ZtJUHal9R1g2NjE1">
+
+<!-- JOIN BUTTON -->
+<a <a id="joinLink"
+onclick="fbq('track','Lead');" 
+href="https://t.me/+ZtJUHal9R1g2NjE1"
+style="
+display:block;
+background:#FFFF00;
+color:#000000;
+padding:15px;
+border-radius:30px;
+font-size:18px;
+font-weight:bold;
+text-decoration:none;
+margin-bottom:25px;
+">
+CLICK TO JOIN
+</a>
+
+<!-- ACCURACY -->
+<h2 style="color:red; margin:0;">
+99% ACCURACY
+</h2>
+<h3 style="margin-top:5px; color:#ffff00; font-size:14px;">
+💸LIVE PAISA BANAO💸
+</h3>
+
+<!-- ================= EDIT SECTION END ================= -->
+
+</div>
+ 
+ <!-- ⏱ TIMER SCRIPT -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    let timeLeft = 30;
+    let timer = document.getElementById("timer");
+    let joinLink = document.getElementById("joinLink").href;
+
+    let countdown = setInterval(function () {
+
+        let seconds = timeLeft < 10 ? "0" + timeLeft : timeLeft;
+        timer.innerHTML = "00:" + seconds;
+
+        if (timeLeft === 0) {
+            clearInterval(countdown);
+         
+         // 🔴 META PIXEL EVENT ON TIMER END
+            fbq('track', 'CompleteRegistration');
+         
+            window.location.href = joinLink;
+        }
+
+        timeLeft--;
+
+    }, 1000);
+
+});
+</script>
+
+
+</body>
+</html>
